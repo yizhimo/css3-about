@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 450px;
+      height: 450px;
+      margin: 200px auto;
+      /* background-color: black; */
+      background: url("./img/16.png");
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .box img, .box h2 {
+      position: absolute;
+      transition: all 0.5s;
+    }
+    h2 {
+      bottom: 10px;
+      left: -100px;
+    }
+    .box img:nth-child(1) {
+      width: 430px;
+      height: 430px;
+      left: 15px;
+      top: 15px;
+    }
+    .box img:nth-child(2) {
+      width: 200px;
+      height: 130px;
+      right: 0;
+      top: -250px;
+    }
+    .box img:nth-child(3) {
+      width: 200px;
+      height: 130px;
+      right: -800px;
+      top: 100px;
+    }
+    .box img:nth-child(4) {
+      width: 200px;
+      height: 130px;
+      right: 0;
+      bottom: -250px;
+    }
+    .box:hover img:nth-child(1) {
+      width: 400px;
+      height: 400px;
+    }
+    .box:hover img:nth-child(2) {
+      width: 200px;
+      height: 130px;
+      right: 15px;
+      top: 15px;
+    }
+    .box:hover img:nth-child(3) {
+      width: 200px;
+      height: 130px;
+      right: 15px;
+      top: 166px;
+    }
+    .box:hover img:nth-child(4) {
+      width: 200px;
+      height: 130px;
+      right: 15px;
+      bottom: 15px;
+    }
+    .box:hover h2 {
+      bottom: 10px;
+      left: 15px;
+      color: #ffffff;
+    }
+    .box:hover {
+      width: 640px;
+      height: 460px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="./img/4.jpg" alt=""/>
+    <img src="./img/10.jpg" alt=""/>
+    <img src="./img/12.jpg" alt=""/>
+    <img src="./img/14.jpg" alt=""/>
+    <h2>一只馍</h2>
+  </div>
+</body>
+</html>
